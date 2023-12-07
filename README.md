@@ -1,7 +1,7 @@
 # ee541_final_project
 Motive:
 
-The goal of this project was to use deep learning techniques for the task of American sign language detection. American sign language is a visual-gestural language used by deaf and hard- of-hearing individuals in the United States and Canada. It is a complex and rich language that relies on hand gestures, facial expressions, and body posture to convey meaning. We have built a custom CNN model to achieve this goal and also trained the non-pretrained ResNet-18 model to compare the performances of the two models.
+The primary motive of the project is to bridge the communication gap for the deaf and hard-of-hearing community. Utilizing advanced computer vision and machine learning techniques, specifically a custom-built Convolutional Neural Network, the project aims to accurately interpret American Sign Language from images. This initiative not only enhances accessibility and inclusivity but also serves as an educational tool, promoting wider understanding and use of sign language. Ultimately, it strives to integrate the deaf community more seamlessly into a world dominated by verbal and auditory communication.
 
 Dataset:
 
@@ -13,13 +13,13 @@ The link to the dataset is : [https://www.kaggle.com/datasets/grassknoted/asl-al
 
 Files Description:
 
-File 1: EE541_Project_Primary_CNN_Model.ipynb - This corresponds to the first model we built during the duration of this project. This is a fairly simple model with just 2 convolutional layers.
+File 1: Sign_Language_Final.ipynb - This corresponds to the final CNN model built for sign recognition. It comprises of 4 convolutional and pooling layers followed by batch normalization to stabilize training.
 
-File 2: EE541_Project_Secondary_CNN_Model.ipynb - This corresponds to the second model we built during the duration of this project. This is an improved model when compared to the primary model in terms of performance (accuracy and loss)
+File 2: handTracker.py - This module is built using Mediapipe library to extract hand landmarks from live webcam feed and to process it and define the Region of Interest.
 
-File 3: EE541_Project_Final_CNN_Model.ipynb - This corresponds to the final model we built during the duration of this project. This is the best model out of the 3 models we built. It generalizes better and also a relatively large model with 5 convolutional layers.
+File 3: Final prediction module final.ipynb - This combines the earlier two files and we obtain predictions on live webcam feed.
 
-File 4: EE541_Project_ResNet_Model.ipynb - This corresponds to the ResNet-18 model we used to compare our model's performances. This is not a pre-trained model but just a resnet model (untrained) which is trained on our custom dataset.
+File 4: model_card_ee541_group_24 - This gives a concise statement of the model and its training parameters, use cases and factors that might affect it's performance.
 
 Getting Started:
 
